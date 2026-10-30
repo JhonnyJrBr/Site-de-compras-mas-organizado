@@ -6,14 +6,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+/* Fundo da página em um roxo místico bem escuro, quase preto, para destacar os cards */
 body {
     background-color: #0b071a;
     color: #f3f4f6;
     padding: 40px 20px;
 }
 
-
+/* Cabeçalho principal com efeito gradiente Psíquico */
 .cabecalho {
     text-align: center;
     margin-bottom: 60px;
@@ -21,7 +21,7 @@ body {
 
 .cabecalho h1 {
     font-size: 3rem;
-
+    /* Gradiente indo do Violeta para um Roxo mais claro e vibrante */
     background: linear-gradient(135deg, #7c3aed, #a78bfa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -36,29 +36,29 @@ body {
     color: #9ca3af;
 }
 
-
+/* Container principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-
+/* Seções de Categorias */
 .categoria-secao {
     margin-bottom: 60px;
 }
 
-
+/* Títulos das categorias com uma linha dourada/amarela, lembrando os detalhes do Kadabra */
 .categoria-secao h2 {
     font-size: 1.6rem;
-    color: #e9d5ff; 
+    color: #e9d5ff; /* Roxo bem claro */
     margin-bottom: 25px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #7c3aed; 
+    border-bottom: 2px solid #7c3aed; /* Linha Violeta */
     position: relative;
     text-transform: capitalize;
 }
 
-
+/* Detalhe dourado na barra do título da categoria */
 .categoria-secao h2::after {
     content: '';
     position: absolute;
@@ -66,10 +66,10 @@ body {
     left: 0;
     width: 60px;
     height: 2px;
-    background-color: #fbbf24; 
+    background-color: #fbbf24; /* Amarelo/Dourado do Kadabra */
 }
 
-
+/* Grid Responsivo que mantém as imagens perfeitas */
 .catalogo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -77,37 +77,37 @@ body {
     margin-bottom: 25px;
 }
 
-
+/* Card do Produto estilizado com fundo escuro e bordas iluminadas */
 .card {
-    background: #161129;
+    background: #161129; /* Roxo escuro profundo */
     border-radius: 12px;
     overflow: hidden;
- 
+    /* Sombra neon suave em tom violeta */
     box-shadow: 0 4px 15px rgba(124, 58, 237, 0.1);
     display: flex;
     flex-direction: column;
-    border: 1px solid #2e234d;
+    border: 1px solid #2e234d; /* Borda roxa sutil */
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-
+/* Efeito ao passar o mouse: o card "brilha" em violeta */
 .card:hover {
     transform: translateY(-5px);
     border-color: #a78bfa;
     box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
 }
 
-
+/* Ajuste das Imagens: Mantém a proporção real, sem esticar e sem achatar */
 .card img {
     width: 100%;
     height: auto;
     max-height: 280px;
     object-fit: scale-down;
     padding: 20px;
-    background-color: #1e1836; 
+    background-color: #1e1836; /* Fundo ligeiramente diferente para destacar a foto do produto */
 }
 
-
+/* Informações internas do card */
 .card-info {
     padding: 20px;
     background: #161129;
@@ -115,7 +115,7 @@ body {
     flex-direction: column;
     gap: 12px;
     border-top: 1px solid #2e234d;
-    margin-top: auto; 
+    margin-top: auto; /* Mantém os textos alinhados abaixo da imagem */
 }
 
 .card-info h3 {
@@ -123,17 +123,17 @@ body {
     color: #f3f4f6;
     font-weight: 600;
     line-height: 1.4;
-    text-transform: lowercase; 
+    text-transform: lowercase; /* Mantém o estilo minúsculo que você usou no seu HTML */
 }
 
-
+/* Preço destacado em Dourado/Amarelo */
 .preco {
     font-size: 1.4rem;
     font-weight: 700;
     color: #fbbf24; 
 }
 
-
+/* Links "Ver Mais" estilizados como botões psíquicos */
 .link-ver-mais {
     display: inline-block;
     margin-top: 10px;
@@ -148,3 +148,84 @@ body {
     color: #ddd6fe;
     text-shadow: 0 0 8px rgba(167, 139, 250, 0.6);
     text-decoration: underline;}
+
+
+.cabecalho {
+    position: relative;
+}
+
+.perfil-usuario {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 10px 18px;
+
+    background: #161129;
+    border: 1px solid #7c3aed;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.2);
+}
+
+.icone-perfil {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.informacoes-perfil {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 3px;
+}
+
+.informacoes-perfil span {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.informacoes-perfil strong {
+    color: #fbbf24;
+    font-size: 15px;
+}
+
+.botao-sair {
+    background: #7c3aed;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-sair:hover {
+    background: #a78bfa;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        padding-top: 75px;
+    }
+
+    .perfil-usuario {
+        right: 0;
+        top: -25px;
+        padding: 7px 10px;
+    }
+}
