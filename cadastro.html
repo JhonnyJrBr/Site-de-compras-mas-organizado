@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loja</title>
+    <title>Cadastro - Kadabra</title>
     <link rel="stylesheet" href="loja.css">
+    <script src="cadastro.js" defer></script>
 </head>
 <body>
-    <h1>cadastro</h1>
-    <br>
-    <br>
-    <p>usuario</p>
-    <input type="text">
-    <br>
-    <p>senha</p>
-    <input type ="password">
-    <button tipe="submit">cadastrar</button>
-    <p>ja tem conta?<a href="loginempresa.html">faça login</a></p>
+    <h1>Cadastro</h1>
+    <form id="formCadastro">
+        <p>Usuário</p>
+        <input type="text" id="usuario" required>
+        <p>Senha</p>
+        <input type="password" id="senha" minlength="6" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+    <p id="mensagem"></p>
+    <p>Já tem conta? <a href="loginempresa.html">Faça login</a></p>
+    <p><a href="kadabra.html">Voltar para a loja</a></p>
 </body>
 </html>
