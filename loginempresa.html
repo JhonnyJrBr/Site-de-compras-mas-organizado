@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Kadabra</title>
+    <link rel="stylesheet" href="loja.css">
+</head>
+<body class="pagina-conta">
+<div class="container">
+    <h1>Login</h1>
+    <h2>Entrar na conta</h2>
+    <p>Informe seus dados para continuar.</p>
+    <form id="formLogin">
+        <label for="usuarioLogin">Usuário</label>
+        <input type="text" id="usuarioLogin" name="usuarioLogin" placeholder="Digite seu usuário" required>
+        <label for="senhaLogin">Senha</label>
+        <input type="password" id="senhaLogin" name="senhaLogin" placeholder="Digite sua senha" required>
+        <button type="submit">Entrar</button>
+    </form>
+    <p id="mensagem" style="color:#f87171;margin-top:12px;"></p>
+    <p>Ainda não tem conta?</p>
+    <a href="cadastro.html">Criar cadastro</a>
+    <p><a href="kadabra.html">Entrar na loja como visitante</a></p>
+</div>
+<script src="cadastro.js"></script>
+</body>
+</html>
